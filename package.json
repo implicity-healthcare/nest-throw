@@ -1,0 +1,48 @@
+{
+  "name": "nest-throws",
+  "version": "1.0.0",
+  "description": "Improve readability, efficiency and error's mapping for NestJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "build": "rm -rf ./lib && tsc",
+    "prepare": "npm run build"
+  },
+  "author": "Implicity",
+  "license": "ISC",
+  "files": [
+    "lib",
+    "node_modules"
+  ],
+  "dependencies": {
+    "@nestjs/common": "^6.7.2",
+    "@nestjs/core": "^6.7.2",
+    "@nestjs/testing": "^6.7.2",
+    "rxjs": "^6.5.3"
+  },
+  "devDependencies": {
+    "@types/consul": "^0.23.33",
+    "@types/jest": "^24.0.18",
+    "@types/lodash": "^4.14.139",
+    "jest": "^24.9.0",
+    "ts-jest": "24.1.0",
+    "typeorm": "^0.2.19",
+    "typescript": "^3.6.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
