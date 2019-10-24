@@ -7,7 +7,7 @@ class ErrorB extends Error {}
 
 class HTTPExceptionFactory implements IHttpExceptionFactory {
     public create(e) {
-        return new ConflictException({ message: { ...e } })
+        return new ConflictException({ message: { ...e } });
     }
 }
 
