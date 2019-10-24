@@ -4,7 +4,7 @@ This utility provide you a decorators to map errors from your NEST controller me
 
 ## Install
 
-npm install --save @implicity/nest-throw
+`npm install --save @implicity/nest-throw`
 
 ## Usage
 
